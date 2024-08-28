@@ -78,14 +78,14 @@ async function ArenaData() {
         });
 
         //card title
-        var card_body = $('<h5 class = "card-title text-center"></h5>');
+        var card_body = $('<h5 class = "card-title text-center p-1"></h5>');
         card_body.text(data_set[k]['name']);
 
         //img
         var img = $('<img>',
             {
                 'src': data_set[k]['url'],
-                'class': 'rounded'
+                'class': 'rounded-card'
             }
         );
 

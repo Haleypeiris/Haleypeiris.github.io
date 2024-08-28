@@ -77,7 +77,7 @@ async function LittleLegendData() {
             var exisiting_indicators = indicators;
             var next_button = $('<button type="button"></button>');
             next_button.attr({
-                'data-bs-target': '#' + k,
+                'data-bs-target': '#' + (k - (data_set[k]['level']-1)),
                 'data-bs-slide-to': data_set[k]['level'] - 1
 
             });
@@ -87,7 +87,7 @@ async function LittleLegendData() {
             var img = $('<img>',
                 {
                     'src': data_set[k]['url'],
-                    'class': 'rounded'
+                    'class': 'rounded-card'
                 }
             );
             
@@ -110,7 +110,7 @@ async function LittleLegendData() {
             });
 
             //Card text and title
-            var card_text = $('<p class = "card-text text-center"></p>');
+            var card_text = $('<p class = "card-text text-center p-2"></p>');
             card_text.text(data_set[k]['description']);
             var card_body = $('<h5 class = "card-title text-center"></h5>');
             card_body.text(data_set[k]['name']);
@@ -126,7 +126,7 @@ async function LittleLegendData() {
             var img = $('<img>',
                 {
                     'src': data_set[k]['url'],
-                    'class': 'rounded'
+                    'class': 'rounded-card'
                 }
             );
 

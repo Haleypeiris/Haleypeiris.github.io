@@ -79,7 +79,7 @@ async function BoomsData(){
             var exisiting_indicators = indicators;
             var next_button = $('<button type="button"></button>');
             next_button.attr({
-                'data-bs-target': '#' + k,
+                'data-bs-target': '#' + (k - (data_set[k]['level']-1)),
                 'data-bs-slide-to': data_set[k]['level'] - 1
 
             });
@@ -90,7 +90,7 @@ async function BoomsData(){
             var img = $('<img>',
                 {
                     'src': data_set[k]['url'],
-                    'class': 'rounded'
+                    'class': 'rounded-card'
                 }
             );
             
@@ -115,7 +115,7 @@ async function BoomsData(){
             });
 
             //card title
-            var card_body = $('<h5 class = "card-title text-center"></h5>');
+            var card_body = $('<h5 class = "card-title text-center p-1"></h5>');
             card_body.text(data_set[k]['name']);
 
             //carousel
@@ -129,7 +129,7 @@ async function BoomsData(){
             var img = $('<img>',
                 {
                     'src': data_set[k]['url'],
-                    'class': 'rounded'
+                    'class': 'rounded-card'
                 }
             );
 
