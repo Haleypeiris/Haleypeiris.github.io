@@ -1,6 +1,6 @@
 # Haleypeiris.github.io
 
-A website to display all the TFT cosmetics.
+A website to display all the TFT cosmetics. https://haleypeiris.github.io/
 
 Assets: https://www.communitydragon.org/
 
